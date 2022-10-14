@@ -21,7 +21,7 @@ def hbnb_page():
 @app.route('/c/<text>', strict_slashes=False)
 def c_page(text):
     """ This method returns C page """
-    return " C " + text.replace("_", " ")
+    return " C %s " % text.replace("_", " ")
 
 
 if __name__ == '__main__':
